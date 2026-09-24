@@ -1,6 +1,25 @@
-.venv/
+# Data files
+data/raw/*
+data/processed/*
+data/samples/*
+
+# Keep directory structure
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/samples/.gitkeep
+
+# Python
 __pycache__/
 *.py[cod]
+.venv/
+venv/
+
+# Jupyter
 .ipynb_checkpoints/
-.pytest_cache/
+
+# macOS
 .DS_Store
+
+# Environment variables / secrets
+.env
+.env.*
